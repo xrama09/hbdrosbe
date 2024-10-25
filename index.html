@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <title>お誕生日おめでとう Rosbe</title>
+    <style>
+        *{
+            font-family: 'DotGothic16', sans-serif;
+        }
+        body{
+            background-color: #455F89;
+        }
+        .envelope {
+            background-image: url('https://2.bp.blogspot.com/-sZ0ugJLWkI0/Ur1GPaI4j_I/AAAAAAAAcaE/t08ufIizPm8/s400/present_box.png');
+            background-size: cover;
+            background-position: center;
+            width: 220px;
+            height: 220px;
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+        .envelope-msg {
+            color: rgb(248, 202, 242);
+            text-align: center;
+        }
+        .letter-close {
+            display: block;
+        }
+        .letter-open {
+            display: none;
+        }
+        .jarujaru {
+            width: 200px;
+            height: 200px;
+            background-image: url('https://i.postimg.cc/CM9thf31/Whats-App-Image-2024-10-25-at-10-31-36.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: white;
+            margin: 100px auto 0px auto;
+            border-radius: 10px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .messagebox {
+            width: 400px;
+            margin: auto;
+            font-size: 20px;
+            line-height: 30px;
+            background-color: ivory;
+            color: #455F89;
+            padding: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+        .agrid-container {
+            width: 600px;
+            margin: auto;
+            padding: 30px;
+        }
+        .grid-container {
+            width: 600px;
+            margin: auto;
+            padding: 30px;
+        }
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                font-size: 20px;
+                line-height: 30px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+
+            }
+    </style>
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+    </script>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/confetti.js"></script>
+</head>
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">click me to open !</h2>
+    </div>
+    <div class="letter-open">
+        <h1>お誕生日おめでとうございます！</h1>
+        <div class="agrid-container">
+            <img src="https://i.postimg.cc/CM9thf31/Whats-App-Image-2024-10-25-at-10-31-36.jpg" alt="Team" class="w3-image">
+        </div>
+        <div class="messagebox">
+            To Rosbe さん <br/>
+            Happy Birthday to You !!<br/>
+            Selamat hari jadi !<br/>
+            Semoga panjang umur dan murah rezeki <br/>
+            Because you could not eat a lot of sweets, <br/>
+            I will give you an image of cake instead <br/>
+            lol<br/>
+            <br/>
+            Sincerely, <br/>
+            Nadhira <br/>
+
+        </div>
+        <div class="grid-container">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCmUOaxwAXmqSqk3g0Q2B0te_YLy9cJtBdSZL2q74iZCr1Xba4LSAxIFM4bglJaP5n-SiZLJ8WFHPTyh4wM9cVXTMa6YD07WSTDRnFEb12lEtndG8f5TfRwaMLLgNO5Q6sLmjKPbfQaldX/s800/birthday_animal.png" alt="Birthday Party With Cake" class="w3-image">
+        </div>
+    </div>
+    
+</body>
+</html>
